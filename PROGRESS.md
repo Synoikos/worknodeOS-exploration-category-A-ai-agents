@@ -1,431 +1,192 @@
-# Category H Analysis Progress Tracker
+# Wave 1 Analysis Progress Tracker
 
 **Purpose**: Track incremental progress across multiple Claude Code sessions
-**Status**: Use this to resume work where you left off
+**How to use**: Update checkboxes as you complete each item, commit frequently
 
 ---
 
-## 📊 OVERALL PROGRESS
+## 📊 5-PHASE WORKFLOW
 
-- [ ] Phase 1: Read all source files (17 files)
-- [ ] Phase 2: Analyze each file (17 analyses)
-- [ ] Phase 3: Cross-file synthesis
-- [ ] Phase 4: Generate research questions
-- [ ] Phase 5: Final review and commit
+- [ ] **Phase 1**: Read all source files (get familiar, don't analyze yet)
+- [ ] **Phase 2**: Analyze each file individually → `analysis/files/`
+- [ ] **Phase 3**: Cross-file synthesis → `analysis/SYNTHESIS.md`
+- [ ] **Phase 4**: Research questions → `analysis/CATEGORY_X_RESEARCH_QUESTIONS.md`
+- [ ] **Phase 5**: Final assembly → `analysis/CATEGORY_X_ANALYSIS.md`
 
-**Current Phase**: Phase 1 (update as you progress)
-
----
-
-## 📁 PHASE 1: FILE READING CHECKLIST
-
-Read each file and create brief notes. Don't analyze yet, just familiarize.
-
-- [ ] Read: `ELEVATOR_PITCH.MD`
-- [ ] Read: `WORKNODE_VS_APS.MD`
-- [ ] Read: `APPLICATION_LAYER.MD`
-- [ ] Read: `CHECK_THIS.MD`
-- [ ] Read: `KALI_LINUX.md`
-- [ ] Read: `layer_4.md`
-- [ ] Read: `other_future.md`
-- [ ] Read: `rhizomedb_analysis.md`
-- [ ] Read: `TOOLS_TO_EXPLORE.MD`
-- [ ] Read: `what_else_to_build.md`
-- [ ] Read: `README.md`
-- [ ] Read: `IMPORTANT_GAPS_TO_SOLVE_STILL.MD`
-- [ ] Read: `OmniDaemon_etc.md`
-- [ ] Read: `OmniDaemon_facets_integration.md`
-- [ ] Read: `UI_Implementation.md`
-- [ ] Read: `UI_USER_INTERFACE_TECH.MD`
-- [ ] Read: `● Excellent question! Security is CRITICAL for the UI layer. Let me give you the definitive answer on the safest● Excellent question! Security is CRITICAL for the UI layer. Let me giv.MD`
-
-**When Phase 1 complete**: Mark "Phase 1" above as [x] and move to Phase 2
+**Current Phase**: _____ (update as you progress)
 
 ---
 
-## 🔍 PHASE 2: PER-FILE ANALYSIS CHECKLIST
+## 📁 PHASE 1: FILE READING
 
-For each file, create a markdown file in `analysis/files/` with structured analysis.
+List all files in `source-docs/` then read each one.
+**Goal**: Familiarize yourself, take brief notes, don't deep-analyze yet.
 
+```bash
+ls -1 source-docs/
+```
 
-### File: `ELEVATOR_PITCH.MD`
+For each file, create a checkbox below:
+- [ ] Read: `___________`
+- [ ] Read: `___________`
+- [ ] Read: `___________`
 
-- [ ] Create `analysis/files/ELEVATOR_PITCH_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
+(Add more as needed based on `ls` output)
 
-### File: `WORKNODE_VS_APS.MD`
+**When complete**: Mark Phase 1 above as [x], commit progress, move to Phase 2
 
-- [ ] Create `analysis/files/WORKNODE_VS_APS_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
+---
 
-### File: `APPLICATION_LAYER.MD`
+## 🔍 PHASE 2: PER-FILE ANALYSIS
 
-- [ ] Create `analysis/files/APPLICATION_LAYER_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
+For **each file** in `source-docs/`, create a separate analysis file in `analysis/files/`.
 
-### File: `CHECK_THIS.MD`
+### Template for each file analysis:
 
-- [ ] Create `analysis/files/CHECK_THIS_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
+**File**: `analysis/files/FILENAME_ANALYSIS.md`
 
-### File: `KALI_LINUX.md`
+**Required sections** (use AGENT_ARCHITECTURE_BOOTSTRAP.md for criteria definitions):
 
-- [ ] Create `analysis/files/KALI_LINUX_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
+1. Executive Summary (3-5 sentences)
+2. Architectural Alignment
+3. **Criterion 1**: NASA Compliance (SAFE/REVIEW/BLOCKING)
+4. **Criterion 2**: v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
+5. **Criterion 3**: Integration Complexity (score 1-10)
+6. **Criterion 4**: Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
+7. **Criterion 5**: Security/Safety (CRITICAL/OPERATIONAL/NEUTRAL)
+8. **Criterion 6**: Resource/Cost (ZERO/LOW/MODERATE/HIGH)
+9. **Criterion 7**: Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
+10. **Criterion 8**: Esoteric Theory Integration
+11. Key Decisions Required
+12. Dependencies on Other Files
+13. Priority Ranking (P0/P1/P2/P3)
 
-### File: `layer_4.md`
+### Checklist (one per file):
 
-- [ ] Create `analysis/files/layer_4_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
+- [ ] File 1: `___________` → `analysis/files/FILE1_ANALYSIS.md`
+- [ ] File 2: `___________` → `analysis/files/FILE2_ANALYSIS.md`
+- [ ] File 3: `___________` → `analysis/files/FILE3_ANALYSIS.md`
 
-### File: `other_future.md`
+(Add more based on file count)
 
-- [ ] Create `analysis/files/other_future_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
+**Strategy**: Do 1-3 files per session, commit after each, resume in next session
 
-### File: `rhizomedb_analysis.md`
-
-- [ ] Create `analysis/files/rhizomedb_analysis_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
-
-### File: `TOOLS_TO_EXPLORE.MD`
-
-- [ ] Create `analysis/files/TOOLS_TO_EXPLORE_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
-
-### File: `what_else_to_build.md`
-
-- [ ] Create `analysis/files/what_else_to_build_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
-
-### File: `README.md`
-
-- [ ] Create `analysis/files/README_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
-
-### File: `IMPORTANT_GAPS_TO_SOLVE_STILL.MD`
-
-- [ ] Create `analysis/files/IMPORTANT_GAPS_TO_SOLVE_STILL_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
-
-### File: `OmniDaemon_etc.md`
-
-- [ ] Create `analysis/files/OmniDaemon_etc_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
-
-### File: `OmniDaemon_facets_integration.md`
-
-- [ ] Create `analysis/files/OmniDaemon_facets_integration_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
-
-### File: `UI_Implementation.md`
-
-- [ ] Create `analysis/files/UI_Implementation_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
-
-### File: `UI_USER_INTERFACE_TECH.MD`
-
-- [ ] Create `analysis/files/UI_USER_INTERFACE_TECH_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
-
-### File: `● Excellent question! Security is CRITICAL for the UI layer. Let me give you the definitive answer on the safest● Excellent question! Security is CRITICAL for the UI layer. Let me giv.MD`
-
-- [ ] Create `analysis/files/● Excellent question! Security is CRITICAL for the UI layer. Let me give you the definitive answer on the safest● Excellent question! Security is CRITICAL for the UI layer. Let me giv_ANALYSIS.md` with:
-  - [ ] Executive Summary (3-5 sentences)
-  - [ ] Architectural Alignment (Worknode fit?)
-  - [ ] NASA Compliance Status (SAFE/REVIEW/BLOCKING)
-  - [ ] v1.0 vs v2.0 Timing (CRITICAL/ENHANCEMENT/v2.0+)
-  - [ ] Integration Complexity Score (1-10)
-  - [ ] Mathematical/Theoretical Rigor (PROVEN/RIGOROUS/EXPLORATORY/SPECULATIVE)
-  - [ ] Security/Safety Implications (CRITICAL/OPERATIONAL/NEUTRAL)
-  - [ ] Resource/Cost Impact (ZERO/LOW/MODERATE/HIGH)
-  - [ ] Production Viability (READY/PROTOTYPE/RESEARCH/LONG-TERM)
-  - [ ] Esoteric Theory Integration (synergies with existing theory)
-  - [ ] Key Decisions Required
-  - [ ] Dependencies on other files
-  - [ ] Priority Ranking (P0/P1/P2/P3)
-
-**When Phase 2 complete**: Mark "Phase 2" above as [x] and move to Phase 3
+**When complete**: Mark Phase 2 above as [x], commit all analyses, move to Phase 3
 
 ---
 
 ## 🔗 PHASE 3: CROSS-FILE SYNTHESIS
 
-Create `analysis/SYNTHESIS.md` with:
+Create `analysis/SYNTHESIS.md` combining insights from all individual analyses.
 
-- [ ] Common themes across files
-- [ ] Convergent recommendations (multiple files suggesting same thing)
-- [ ] Contradictions/conflicts that need resolution
-- [ ] Synergies between different proposals
-- [ ] Implementation readiness assessment
-- [ ] Research gaps identified
+**Required sections**:
 
-**When Phase 3 complete**: Mark "Phase 3" above as [x] and move to Phase 4
+- [ ] Common Themes (patterns in 3+ files)
+- [ ] Convergent Recommendations (multiple files → same direction)
+- [ ] Contradictions/Conflicts (incompatible proposals)
+- [ ] Synergies (how files complement each other)
+- [ ] Implementation Readiness (what's ready vs needs work)
+- [ ] Research Gaps (what's underspecified)
+
+**When complete**: Mark Phase 3 above as [x], commit synthesis, move to Phase 4
 
 ---
 
 ## ❓ PHASE 4: RESEARCH QUESTIONS
 
-Create `analysis/CATEGORY_H_RESEARCH_QUESTIONS.md`:
+Create `analysis/CATEGORY_X_RESEARCH_QUESTIONS.md` (replace X with your category letter).
+
+**Target**: 30-50 questions total
 
 - [ ] Generate 5-10 P0 questions (v1.0 blockers)
 - [ ] Generate 10-15 P1 questions (v1.0 enhancements)
 - [ ] Generate 10-15 P2 questions (v2.0 roadmap)
 - [ ] Generate 5-10 P3 questions (long-term research)
-- [ ] Ensure each question has: ID, priority, effort, dependencies, approach, outcome, relevance
 
-**Target**: 30-50 total questions
+**Format per question** (see README.md for template):
+- Question ID (e.g., A-001)
+- Priority, Effort, Dependencies, Approach, Outcome, Relevance
 
-**When Phase 4 complete**: Mark "Phase 4" above as [x] and move to Phase 5
+**When complete**: Mark Phase 4 above as [x], commit questions, move to Phase 5
 
 ---
 
 ## 📝 PHASE 5: FINAL ASSEMBLY
 
-Combine all individual analyses into `analysis/CATEGORY_H_ANALYSIS.md`:
+Combine everything into `analysis/CATEGORY_X_ANALYSIS.md`.
 
-- [ ] Copy/paste Executive Summaries from all file analyses
-- [ ] Create category-level executive summary (300-500 lines)
-- [ ] Add cross-file synthesis from SYNTHESIS.md
-- [ ] Add category-level stringent criteria summary
-- [ ] Create integration roadmap (Phase 1-4)
-- [ ] Add recommendations section
+**Assembly checklist**:
+
+- [ ] Section 1: Executive Summary (synthesize from all file analyses) - 300-500 lines
+- [ ] Section 2: Per-Document Analyses (copy from `analysis/files/`) - 100-200 lines each
+- [ ] Section 3: Cross-File Synthesis (from `analysis/SYNTHESIS.md`) - 300-500 lines
+- [ ] Section 4: Category-Level Criteria Summary - 200-300 lines
+- [ ] Section 5: Integration Roadmap (Phase 1-4 breakdown) - 200-300 lines
+- [ ] Section 6: Recommendations - 100-200 lines
 - [ ] Verify total length: 1,500-2,500 lines
-- [ ] Run final completion checklist from README.md
+- [ ] Run completion checklist from README.md
 
-**When Phase 5 complete**: Mark "Phase 5" above as [x]
+**When complete**: Mark Phase 5 above as [x], final commit and push
 
 ---
 
 ## 💾 COMMIT STRATEGY
 
-**After each phase**, commit your progress:
+**After each phase or every 2-3 files**:
 
 ```bash
-git add analysis/
-git add PROGRESS.md
-git commit -m "Category H: Completed Phase [N]"
+git add analysis/ PROGRESS.md
+git commit -m "Phase [N]: [what you completed]"
 git push
 ```
 
-This ensures work is saved incrementally and can be resumed across sessions.
+Examples:
+- "Phase 1: Read all 7 files"
+- "Phase 2: Analyzed files 1-3"
+- "Phase 2: Analyzed files 4-7, phase complete"
+- "Phase 3: Cross-file synthesis complete"
 
 ---
 
-## 🔄 RESUMING WORK IN NEW SESSION
+## 🔄 RESUMING IN NEW SESSION
 
-When starting a new Claude Code session:
-
-1. **Read PROGRESS.md** - See what's already done
-2. **Check analysis/ directory** - See what files exist
-3. **Continue from current phase** - Pick up where previous session left off
-4. **Update checkboxes** - Mark items complete as you go
-5. **Commit frequently** - Save progress after each file or phase
+1. **Pull latest**: `git pull`
+2. **Read PROGRESS.md**: See what's done
+3. **Check analysis/ directory**: See what files exist
+4. **Continue from current phase**: Pick up where you left off
+5. **Update checkboxes**: Mark as [x] as you complete items
+6. **Commit frequently**: Save progress incrementally
 
 ---
 
 ## 📋 SESSION LOG
 
-Track which sessions worked on this category:
+Track sessions working on this category:
 
-- Session 1: [Date] - Phase(s) completed:
-- Session 2: [Date] - Phase(s) completed:
-- Session 3: [Date] - Phase(s) completed:
+- **Session 1** [Date]: Phase(s): _____ | Files completed: _____
+- **Session 2** [Date]: Phase(s): _____ | Files completed: _____
+- **Session 3** [Date]: Phase(s): _____ | Files completed: _____
 
-(Update this as you work)
+(Add more as needed)
 
 ---
 
-**CURRENT STATUS**: Phase 1 - Ready to start reading files
+## ✅ FINAL COMPLETION CHECKLIST
+
+Before marking work complete:
+
+- [ ] All source files read (Phase 1)
+- [ ] All files have individual analyses in `analysis/files/` (Phase 2)
+- [ ] `analysis/SYNTHESIS.md` exists (Phase 3)
+- [ ] `analysis/CATEGORY_X_RESEARCH_QUESTIONS.md` has 30-50 questions (Phase 4)
+- [ ] `analysis/CATEGORY_X_ANALYSIS.md` is 1,500-2,500 lines (Phase 5)
+- [ ] All 8 stringent criteria evaluated for all files
+- [ ] All checkboxes in this file marked [x]
+- [ ] Everything committed and pushed to GitHub
+- [ ] README.md completion checklist verified
+
+**When ALL checkboxes complete**: Category analysis is DONE! 🎉
+
+---
+
+**CURRENT STATUS**: Phase 1 - Ready to start
